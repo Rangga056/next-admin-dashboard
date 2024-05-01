@@ -3,24 +3,23 @@ import React from "react";
 import MenuLink from "./menuLink/MenuLink";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Images } from "lucide-react";
 
 const SideBar = () => {
   return (
     <nav className="sticky top-10 h-full flex flex-col">
-      <div className="flex flex-col lg:flex-row items-center gap-3 p-3 ">
+      <div className="flex flex-col lg:flex-row items-center gap-3 p-3 -pt-2 -mb-5 ">
         <Image
           src="/assets/icons/user-circle-icon.svg"
           alt="user-icon"
-          width={50}
-          height={50}
+          width={48}
+          height={48}
         />
         <div className="flex flex-col">
-          <span className="font-medium text-xl">John Doe</span>
-          <span className="text-muted-foreground text-sm">Administrator</span>
+          <span className="font-medium text-lg">John Doe</span>
+          <span className="text-muted-foreground text-xs">Administrator</span>
         </div>
       </div>
-      <div className="overflow-y-auto custom-scroll mt-3">
+      <div className="mt-3">
         <ul>
           {menuItems.map((cat) => (
             <li key={cat.title}>

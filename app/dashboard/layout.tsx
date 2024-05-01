@@ -8,10 +8,10 @@ const Layout = ({
 }>) => {
   return (
     <div className="dark flex">
-      <div className="flex-[1] bg-slate-900 p-3 h-screen lg:px-6">
+      <div className="flex-[1] bg-slate-900 p-3 pb-0 lg:px-6 h-min  custom-scroll ">
         <SideBar />
       </div>
-      <div className="flex-[4] p-4">
+      <div className="flex-[4] p-4 h-screen custom-scroll overflow-y-auto">
         <Navbar />
         {children}
       </div>
