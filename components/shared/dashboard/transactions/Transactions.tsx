@@ -72,6 +72,7 @@ const Transactions = () => {
         </TableBody>
       </Table>
       {/* Charts */}
+      <h1 className="font-medium text-xl p-2 mt-4">Weekly Recap</h1>
       <Charts />
     </div>
   );

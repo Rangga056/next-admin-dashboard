@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} max-w-[1680px] mx-auto dark`}>
+      <body
+        className={`${inter.className} max-w-[1680px] mx-auto dark custom-scroll`}
+      >
         {children}
       </body>
     </html>

@@ -1,5 +1,4 @@
 import CardEl from "@/components/shared/dashboard/cardEl/CardEl";
-import Chart from "@/components/shared/dashboard/chart/Chart";
 import RightBar from "@/components/shared/dashboard/rightBar/RightBar";
 import Transactions from "@/components/shared/dashboard/transactions/Transactions";
 import React from "react";
@@ -16,8 +15,6 @@ const DashboardPage = () => {
         </div>
         {/* Transactions section */}
         <Transactions />
-        {/* Charts */}
-        <Chart />
       </div>
       <div className="flex-[1]">
         <RightBar />

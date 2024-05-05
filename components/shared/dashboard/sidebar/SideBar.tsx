@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const SideBar = () => {
   return (
-    <nav className="sticky top-10 h-full flex flex-col">
+    <nav className="sticky top-10 h-[100vh] max-h-[1440px] flex flex-col">
       <div className="flex flex-col lg:flex-row items-center gap-3 p-3 -pt-2 -mb-5 ">
         <Image
           src="/assets/icons/user-circle-icon.svg"
