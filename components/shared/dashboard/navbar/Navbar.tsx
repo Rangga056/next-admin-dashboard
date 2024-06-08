@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex p-5 w-full h-[64px] items-center justify-between bg-slate-900 rounded-lg">
-      <div className="capitalize text-lg font-medium">
+      <div className="hidden md:flex capitalize text-lg font-medium">
         {pathname.split("/").pop()}
       </div>
       <div className="flex items-center gap-3">
@@ -27,7 +27,7 @@ const Navbar = () => {
             className="outline-none bg-transparent focus-visible:ring-transparent border-none focus-visible:ring-offset-transparent"
           />
         </div>
-        <div className="flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3">
           <Image
             src="/assets/icons/chat-icon.svg"
             alt="chat-icon"

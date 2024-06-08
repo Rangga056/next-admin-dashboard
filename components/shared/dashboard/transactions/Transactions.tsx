@@ -15,11 +15,11 @@ import Charts from "./Charts";
 const Transactions = () => {
   const today = format(new Date(), "dd.MM.yyyy");
   return (
-    <div className="w-full bg-slate-900 p-3 rounded-lg">
+    <div className="w-[90vw] mx-auto md:w-full bg-slate-900 p-3 rounded-lg ">
       {/* Title */}
       <h2 className="text-xl font-medium p-2">Latest Transactions</h2>
       {/* Table */}
-      <Table className="w-[95%] mx-auto mt-3">
+      <Table className="min-w-max md:w-[95%] mx-auto mt-3 overflow-x-scroll">
         <TableCaption>A list of your recent transactions.</TableCaption>
         <TableHeader>
           <TableRow>
